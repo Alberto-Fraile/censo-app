@@ -18,7 +18,7 @@ class CreatePersonasTable extends Migration
             $table->string('nombre');
             $table->string('primerApellido', 150);
             $table->string('segundoApellido', 150);
-            $table->dateTime('fechaNacimiento');
+            $table->dateTime('fechaNacimiento')->unsigned()->unique();
 
             $table->timestamps();
         });

@@ -87,12 +87,12 @@ class PersonasController extends Controller
 
                 if(isset($datos->nombre))
                     $persona->nombre = $datos->nombre;
-                if(isset($datos->telefono))
-                    $persona->telefono = $datos->telefono;
-                if(isset($datos->direccion))
-                    $persona->direccion = $datos->direccion;
-                if(isset($datos->email))
-                    $persona->email = $datos->email;
+                if(isset($datos->primerApellido))
+                    $persona->primerApellido = $datos->primerApellido;
+                if(isset($datos->segundoApellido))
+                    $persona->segundoApellido = $datos->segundoApellido;
+                if(isset($datos->fechaNacimiento))
+                    $persona->fechaNacimiento = $datos->fechaNacimiento;
 
                 //Escribir en la base de datos
                     $persona->save();
